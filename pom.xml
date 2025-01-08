@@ -12,7 +12,7 @@
 	<artifactId>dms</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>dms</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project for Document Management System</description>
 	<url/>
 	<licenses>
 		<license/>

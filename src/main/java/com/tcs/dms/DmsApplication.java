@@ -8,7 +8,7 @@ public class DmsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DmsApplication.class, args);
-		System.out.println("test startup");
+		System.out.println("Hello from Razi!");
 	}
 
 }
