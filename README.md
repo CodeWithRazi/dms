@@ -71,22 +71,22 @@ This project is a **Document Management System (DMS)** built using **Spring Boot
 - Request Body (JSON):
 
   ```json
-{
-    "documentTitle": "Sapiens: A Brief History of Humankind",
-    "author": "Yuval Noah Harari",
-    "language": "English"
-}
+  {
+      "documentTitle": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "language": "English"
+  }
   ```
 
 - Response:
 
   ```json
-{
-    "id": 6,
-    "documentTitle": "Sapiens: A Brief History of Humankind",
-    "author": "Yuval Noah Harari",
-    "language": "English"
-}
+  {
+      "id": 6,
+      "documentTitle": "Sapiens: A Brief History of Humankind",
+      "author": "Yuval Noah Harari",
+      "language": "English"
+  }
   ```
 
 ### 2. **Get a Document by ID**
@@ -97,12 +97,12 @@ This project is a **Document Management System (DMS)** built using **Spring Boot
 - Response:
 
   ```json
-{
-    "id": 1,
-    "documentTitle": "Rich Dad Poor Dad",
-    "author": "Robert Kiyosaki",
-    "language": "English"
-}
+  {
+      "id": 1,
+      "documentTitle": "Rich Dad Poor Dad",
+      "author": "Robert Kiyosaki",
+      "language": "English"
+  }
   ```
 
 ### 3. **Get All Documents**
@@ -112,26 +112,26 @@ This project is a **Document Management System (DMS)** built using **Spring Boot
 - Response:
 
   ```json
-[
-    {
-        "id": 3,
-        "documentTitle": "Spring Boot in Action: Effortless, Enjoyable Java Development",
-        "author": "Razi Hasan",
-        "language": "English"
-    },
-    {
-        "id": 1,
-        "documentTitle": "Rich Dad Poor Dad",
-        "author": "Robert Kiyosaki",
-        "language": "English"
-    },
-    {
-        "id": 5,
-        "documentTitle": "Malgudi Days",
-        "author": "R.K. Narayan",
-        "language": "English"
-    }
-]
+  [
+      {
+          "id": 3,
+          "documentTitle": "Spring Boot in Action: Effortless, Enjoyable Java Development",
+          "author": "Razi Hasan",
+          "language": "English"
+      },
+      {
+          "id": 1,
+          "documentTitle": "Rich Dad Poor Dad",
+          "author": "Robert Kiyosaki",
+          "language": "English"
+      },
+      {
+          "id": 5,
+          "documentTitle": "Malgudi Days",
+          "author": "R.K. Narayan",
+          "language": "English"
+      }
+  ]
   ```
 
 ### 4. **Update a Document**
@@ -141,22 +141,22 @@ This project is a **Document Management System (DMS)** built using **Spring Boot
 - Request Body (JSON):
 
   ```json
-{
-    "documentTitle": "Rich Dad Poor Dad",
-    "author": "Robert Kiyosaki",
-    "language": "Japanese"
-}
+  {
+      "documentTitle": "Rich Dad Poor Dad",
+      "author": "Robert Kiyosaki",
+      "language": "Japanese"
+  }
   ```
 
 - Response:
 
   ```json
-{
-    "id": 1,
-    "documentTitle": "Rich Dad Poor Dad",
-    "author": "Robert Kiyosaki",
-    "language": "Japanese"
-}
+  {
+      "id": 1,
+      "documentTitle": "Rich Dad Poor Dad",
+      "author": "Robert Kiyosaki",
+      "language": "Japanese"
+  }
   ```
 
 ### 5. **Delete a Document**
@@ -195,7 +195,7 @@ spring.jpa.hibernate.ddl-auto=update
 - **Authentication & Authorization**: Add JWT-based authentication and role-based authorization for secure access to document APIs.
 - **File Upload**: Add support for uploading and storing document files.
 - **Search Functionality**: Implement search functionality based on document title, author, or language.
-- **Global Exception Handling**: Implement Exception Handling Based on valrous validations on Global/Project level.
+- **Global Exception Handling**: Implement Exception Handling based on various validations on a global/project level.
 
 ## Contribution Guidelines
 
@@ -207,5 +207,4 @@ We welcome contributions to improve the functionality of the Document Management
 4. Commit your changes (`git commit -m 'Add new feature'`).
 5. Push to the branch (`git push origin feature/your-feature-name`).
 6. Create a pull request.
-
----
+```
