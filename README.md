@@ -71,22 +71,22 @@ This project is a **Document Management System (DMS)** built using **Spring Boot
 - Request Body (JSON):
 
   ```json
-  {
-      "documentTitle": "Sample Document",
-      "author": "John Doe",
-      "language": "English"
-  }
+{
+    "documentTitle": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "language": "English"
+}
   ```
 
 - Response:
 
   ```json
-  {
-      "id": 1,
-      "documentTitle": "Sample Document",
-      "author": "John Doe",
-      "language": "English"
-  }
+{
+    "id": 6,
+    "documentTitle": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "language": "English"
+}
   ```
 
 ### 2. **Get a Document by ID**
@@ -97,12 +97,12 @@ This project is a **Document Management System (DMS)** built using **Spring Boot
 - Response:
 
   ```json
-  {
-      "id": 1,
-      "documentTitle": "Sample Document",
-      "author": "John Doe",
-      "language": "English"
-  }
+{
+    "id": 1,
+    "documentTitle": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "language": "English"
+}
   ```
 
 ### 3. **Get All Documents**
@@ -112,20 +112,26 @@ This project is a **Document Management System (DMS)** built using **Spring Boot
 - Response:
 
   ```json
-  [
-      {
-          "id": 1,
-          "documentTitle": "Sample Document",
-          "author": "John Doe",
-          "language": "English"
-      },
-      {
-          "id": 2,
-          "documentTitle": "Another Document",
-          "author": "Jane Doe",
-          "language": "French"
-      }
-  ]
+[
+    {
+        "id": 3,
+        "documentTitle": "Spring Boot in Action: Effortless, Enjoyable Java Development",
+        "author": "Razi Hasan",
+        "language": "English"
+    },
+    {
+        "id": 1,
+        "documentTitle": "Rich Dad Poor Dad",
+        "author": "Robert Kiyosaki",
+        "language": "English"
+    },
+    {
+        "id": 5,
+        "documentTitle": "Malgudi Days",
+        "author": "R.K. Narayan",
+        "language": "English"
+    }
+]
   ```
 
 ### 4. **Update a Document**
@@ -135,22 +141,22 @@ This project is a **Document Management System (DMS)** built using **Spring Boot
 - Request Body (JSON):
 
   ```json
-  {
-      "documentTitle": "Updated Document Title",
-      "author": "John Smith",
-      "language": "English"
-  }
+{
+    "documentTitle": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "language": "Japanese"
+}
   ```
 
 - Response:
 
   ```json
-  {
-      "id": 1,
-      "documentTitle": "Updated Document Title",
-      "author": "John Smith",
-      "language": "English"
-  }
+{
+    "id": 1,
+    "documentTitle": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "language": "Japanese"
+}
   ```
 
 ### 5. **Delete a Document**
