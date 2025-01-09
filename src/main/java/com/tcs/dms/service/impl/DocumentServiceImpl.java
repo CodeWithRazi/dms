@@ -33,7 +33,7 @@ public class DocumentServiceImpl implements DocumentService {
 	public DocumentDto getDocumentById(Long documentId) {
 
 		Document document = documentRepository.findById(documentId).orElseThrow(
-				() -> new ResourceNotFoundException("Document does not exists with give id : " + documentId));
+				() -> new ResourceNotFoundException("Document does not exists with given id : " + documentId));
 		return DocumentMapper.mapToDocumentDto(document);
 	}
 
@@ -48,7 +48,7 @@ public class DocumentServiceImpl implements DocumentService {
 	public DocumentDto updateDocument(Long documentId, DocumentDto updatedDocument) {
 
 		Document document = documentRepository.findById(documentId).orElseThrow(
-				() -> new ResourceNotFoundException("Document does not exists with give id : " + documentId));
+				() -> new ResourceNotFoundException("Document does not exists with given id : " + documentId));
 
 		document.setDocumentTitle(updatedDocument.getDocumentTitle());
 		document.setAuthor(updatedDocument.getAuthor());
